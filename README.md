@@ -1,2 +1,2 @@
 # github-goit-1
-Репозиторий для тренировки работы с системами контроля версий
+Decorative effects and vector graphics
