@@ -42,6 +42,8 @@ ol {
   --line-color: #ececec;
   --background-button-color-sec: #188ce8;
   --background-color-our-team: #f5f4fa;
+  --background-hero-color: #c4c4c4;
+  --links-color: #afb1b8;
 }
 
 .page {
@@ -168,11 +170,18 @@ ol {
 .auth-nav a:focus {
   color: var(--accent-color);
 }
+
+.auth-nav-icon {
+  display: inline-flex;
+  fill: var(--links-color);
+  margin-right: 10px;
+}
+
 /* Main */
 /* Hero */
 
 .hero {
-  background-color: var(--background-footer-color);
+  background-color: var(--background-hero-color);
 
   padding-top: 200px;
   padding-bottom: 200px;
@@ -181,7 +190,7 @@ ol {
 
 .overlay {
   max-width: 1600px;
-  min-height: 600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -190,9 +199,9 @@ ol {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/imgbg.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 }
 
 .hero-title {
@@ -238,12 +247,22 @@ ol {
   width: 270px;
 }
 
+.features-icon-container {
+  display: flex;
+  /* background-color: var(--background-color-secondary); */
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
 .features-list {
   display: flex;
   gap: 30px;
 }
 
-.features-list .description {
+.features-list .features-description {
   color: var(--title-text-color);
 
   font-weight: 400;
@@ -305,20 +324,20 @@ ol {
 .team-list {
   background-color: var(--white-color);
   widht: 270px;
-  height: 368px;
-  align-items: center;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.person {
+.team-person {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 30px auto 10px auto;
   text-align: center;
 }
 
-.team-list .description {
+.team-list .team-description {
   color: var(--title-text-color);
 
   font-weight: 400;
@@ -326,6 +345,40 @@ ol {
   line-height: 1.19;
   margin-bottom: 30px;
   text-align: center;
+}
+
+.team-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.team-item {
+  width: 44px;
+  height: 44px;
+}
+
+.team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--links-color);
+  background-color: var(--white-color);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 
 /* Button */
@@ -377,6 +430,51 @@ ol {
   background-color: var(--background-button-color-sec);
 }
 
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--primary-text-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients-container {
+  display: flex;
+  gap: 30px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--links-color);
+  border-radius: 4px;
+  fill: var(--links-color);
+  background-color: var(--white-color);
+}
+
+.clients-border {
+  display: flex;
+}
+
+.clients-link:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.clients-link:focus {
+  fill: var(--accent-color);
+}
+
 .footer {
   background: var(--background-footer-color);
   padding-top: 60px;
@@ -422,6 +520,40 @@ ol {
 
 .address-item:last-child {
   margin-bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-links {
+  width: 231px;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: var(--footer-white-color);
+}
+
+.footer-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  fill: color: var(--footer-white-color);
 }
 
 /* Portfolio */
