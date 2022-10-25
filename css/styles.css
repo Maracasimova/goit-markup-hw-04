@@ -177,6 +177,11 @@ ol {
   margin-right: 10px;
 }
 
+.link:hover .auth-nav-icon,
+.link:focus .auth-nav-icon {
+  fill: var(--accent-color);
+}
+
 /* Main */
 /* Hero */
 
@@ -249,7 +254,7 @@ ol {
 
 .features-icon-container {
   display: flex;
-  /* background-color: var(--background-color-secondary); */
+  background-color: var(--background-color-our-team);
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -545,7 +550,7 @@ ol {
   text-transform: uppercase;
   margin-bottom: 20px;
 
-  color: var(--footer-white-color);
+  color: var(--white-color);
 }
 
 .footer-link {
