@@ -538,6 +538,8 @@ ol {
 }
 
 .footer-icons {
+color: var(--white-color);
+
   display: flex;
   flex-direction: column;
   margin-left: 70px;
@@ -559,7 +561,7 @@ ol {
 }
 
 .footer-icon {
-  fill: color: var(--footer-white-color);
+  fill: var(--white-color);
 }
 
 /* Portfolio */
@@ -592,6 +594,17 @@ ol {
   height: 404px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-cards-effects {
+  display: block;
+  text-decoration: none;
+}
+
+.portfolio-cards-effects:hover,
+.portfolio-cards-effects:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-items:nth-child(3n + 3) {
