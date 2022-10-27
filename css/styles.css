@@ -349,7 +349,7 @@ ol {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   text-align: center;
 }
 
@@ -533,10 +533,6 @@ ol {
   align-items: baseline;
 }
 
-.footer-links {
-  width: 231px;
-}
-
 .footer-icons {
 color: var(--white-color);
 
@@ -642,6 +638,7 @@ color: var(--white-color);
 }
 
 .list-title {
+  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
